@@ -7,7 +7,7 @@
 マッピングのために minialign がインストールされている必要があります。(https://github.com/ocxtal/minialign)
 
 #### [使い方]  
-```python3 Target_seq_extraction.py [flanking_seq_1.fasta] [flanking_seq_2.fasta] [target_seq.fasta] [input.fastq]```
+```$ python3 Target_seq_extraction.py [flanking_seq_1.fasta] [flanking_seq_2.fasta] [target_seq.fasta] [input.fastq]```
 
 #### [目的]
 上流側隣接配列、下流側隣接配列、ターゲット配列のすべての配列を含むリードを抽出します。  
