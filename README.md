@@ -4,8 +4,7 @@
 ## Target_seq_extraction.py
 
 #### [依存性]
-マッピングのために minialign がインストールされている必要があります。
-minialign (https://github.com/ocxtal/minialign)
+マッピングのために minialign がインストールされている必要があります。(https://github.com/ocxtal/minialign)
 
 #### [使い方]  
 ```python3 Target_seq_extraction.py [flanking_seq_1.fasta] [flanking_seq_2.fasta] [target_seq.fasta] [input.fastq]```
