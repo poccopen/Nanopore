@@ -54,3 +54,43 @@ input.target.positive.fasta というファイル名形式のファイルひと�
 - リードの配列
 
 が記述されています。
+
+## Target_seq_extraction_single.py
+
+#### [依存性]
+マッピングのために minialign がインストールされている必要があります。(https://github.com/ocxtal/minialign)
+
+#### [使い方]  
+```$ python3 Target_seq_extraction_single.py [target_seq.fasta] [input.fastq]```
+
+#### [目的]
+ターゲット配列を含むリードを抽出し、fastq形式で保存します。
+
+#### [入力ファイル]
+下記の2つのファイルが必要です。
+- ターゲット配列ファイル（FASTA形式）
+- ナノポアシークエンサー出力ファイル（FASTQ形式）
+
+#### [出力ファイル]
+fastqファイルがひとつ出力されます。
+
+## Read_split_by_target.py
+
+#### [依存性]
+マッピングのために blastn がインストールされている必要があります。
+```$ sudo apt install ncbi-blast+```
+
+#### [使い方]  
+```$ python3 Read_split_by_target.py [target_seq.fasta] [input.fastq]```
+
+#### [目的]
+ターゲット配列を含むリードを抽出し、ターゲット配列がアラインされる最大領域の外側の配列を5'側・3'側に分割して、別々のレコードとしてfasta形式で出力します。
+
+#### [入力ファイル]
+下記の2つのファイルが必要です。
+- ターゲット配列ファイル（FASTA形式）
+- ナノポアシークエンサー出力ファイル（FASTQ形式。あらかじめターゲット配列を含むものを抽出したファイルを使うことをおすすめします）
+
+#### [出力ファイル]
+デフォルトの出力先は標準出力です。適宜ファイルに保存してください。
+
