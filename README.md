@@ -1,19 +1,23 @@
 # Nanopore
 ナノポアシークエンサーデータ解析のためのPythonスクリプトを置いてあります。
+Python scripts for Nanopore long-read sequence analysis. 
 
 ## Target_seq_extraction.py
 
-#### [依存性]
+#### [依存性] [Dependency]
 マッピングのために minialign がインストールされている必要があります。(https://github.com/ocxtal/minialign)
+minialign is required for mapping. (https://github.com/ocxtal/minialign)
 
-#### [使い方]  
+#### [使い方] [Usage]  
 ```$ python3 Target_seq_extraction.py [flanking_seq_1.fasta] [flanking_seq_2.fasta] [target_seq.fasta] [input.fastq]```
 
-#### [目的]
+#### [目的] [Purpose]
 上流側隣接配列、下流側隣接配列、ターゲット配列のすべての配列を含むリードを抽出します。  
 上流側隣接配列と下流側隣接配列の間の塩基長を計算します。
+Extract reads containing all of the upstream adjacent sequences, the downstream adjacent sequences, and the target sequences.  
+Calculate the base length between the upstream adjacent sequence and the downstream adjacent sequence.
 
-#### [入力ファイル]
+#### [入力ファイル] [Input files]
 下記の4つのファイルが必要です。  
 - 上流側隣接配列ファイル（FASTA形式）
 - 下流側隣接配列ファイル（FASTA形式）
