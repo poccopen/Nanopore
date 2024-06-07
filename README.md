@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/130974926.svg)](https://zenodo.org/badge/latestdoi/664611010)
 # Nanopore
 ナノポアシークエンサーデータ解析のためのPythonスクリプトを置いてあります。
 
